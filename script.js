@@ -1,43 +1,24 @@
-const fragments = [
-  { id: "hero-css", file: "pages/hero.html" },
-  { id: "feature1-css", file: "pages/feature1.html" },
-  { id: "color-css", file: "pages/color.html", callback: initColorSwatches },
-  { id: "models-css", file: "pages/models.html" },
-  { id: "scroll-css", file: "pages/scroll.html", callback: initScrollCanvas }, // initScrollCanvas will trigger image loading
-  { id: "feature2-css", file: "pages/feature2.html" },
-  { id: "data-css", file: "pages/data.html" },
-  { id: "review-css", file: "pages/review.html" },
-  { id: "contact-css", file: "pages/contact.html" }
-];
+
 
 let loadedCount = 0;
-let totalResourcesToLoad = fragments.length; // Start with HTML fragments
-
-function loadHTML(targetId, fileName, callback) {
-  fetch(fileName)
-    .then(response => response.text())
-    .then(content => {
-      document.getElementById(targetId).innerHTML = content;
-      if (callback) callback();
-      checkAllLoaded(); // Check after each HTML fragment
-    })
-    .catch(error => {
-      console.error(`Error loading ${fileName}:`, error);
-      checkAllLoaded(); // Still call checkAllLoaded to prevent infinite preloader if a fragment fails
-    });
-}
+let totalResourcesToLoad = 0; // Only image frames or other dynamic assets now
 
 function checkAllLoaded() {
   loadedCount++;
   if (loadedCount === totalResourcesToLoad) {
-    allLoaded(); // all done
+    allLoaded();
   }
 }
+
+
+
 
 function allLoaded() {
   document.getElementById("preloader").style.display = "none"; // Hide preloader
   document.getElementById("main-body").style.display = "block"; // Show main content
 }
+
+checkAllLoaded();
 
 // Modify initScrollCanvas to integrate with preloading
 function initScrollCanvas() {
@@ -137,10 +118,7 @@ function initScrollCanvas() {
   });
 }
 
-// Load all fragments (this will now also implicitly trigger image loading count)
-fragments.forEach(({ id, file, callback }) => {
-  loadHTML(id, file, callback); //
-});
+;
 
 // Color swatches (remains the same)
 function initColorSwatches() { //
@@ -190,3 +168,6 @@ function topFunction() {
         behavior: "smooth"
     });
 }
+
+initColorSwatches();
+initScrollCanvas();
