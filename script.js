@@ -163,3 +163,30 @@ function initColorSwatches() { //
     });
   });
 }
+
+/// Get the button:
+const mybutton = document.getElementById("scr-btn");
+
+// When the user scrolls down 200px from the top of the document, show the button
+// Using a higher scroll threshold (200px) is generally better for "scroll to top" buttons.
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.classList.add("show"); // Add the 'show' class
+    } else {
+        mybutton.classList.remove("show"); // Remove the 'show' class
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    // Smooth scroll behavior can be added with CSS 'scroll-behavior: smooth;' on html or body
+    // Or via JavaScript for more control across browsers:
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
