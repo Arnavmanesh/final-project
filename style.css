@@ -9,13 +9,14 @@
   --color-card: #f8f9fa;
   --color-background-lighter: #e9ecef;
   --color-text-secondary: #6c757d;
-  --color-primary: #32a5e8;
+  --color-primary: #24b4fb;
   --border-radius-sm: 0.25rem;
   --border-radius: 0.5rem;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /*Loading animation*/
+/* From Uiverse.io by Nawsome */ 
 .wheel-and-hamster {
   --dur: 1s;
   position: relative;
@@ -375,7 +376,7 @@
     /* Positioning & Layout */
     position: fixed;
     bottom: 20px; /* Placed at the bottom */
-    right: 30px; /* Placed from the right */
+    right: 15px; /* Placed from the right */
     z-index: 99;
     display: flex; /* Always flex for centering content */
     align-items: center;
