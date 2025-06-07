@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
+
 <body>
-  
-<div id="preloader" style="
+
+  <div id="preloader" style="
   position: fixed;
   inset: 0;
   background: white;
@@ -21,130 +23,897 @@
   justify-content: center;
   align-items: center;
   font-family: sans-serif;">
-  <!-- Loading animation --> 
-<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-	<div class="wheel"></div>
-	<div class="hamster">
-		<div class="hamster__body">
-			<div class="hamster__head">
-				<div class="hamster__ear"></div>
-				<div class="hamster__eye"></div>
-				<div class="hamster__nose"></div>
-			</div>
-			<div class="hamster__limb hamster__limb--fr"></div>
-			<div class="hamster__limb hamster__limb--fl"></div>
-			<div class="hamster__limb hamster__limb--br"></div>
-			<div class="hamster__limb hamster__limb--bl"></div>
-			<div class="hamster__tail"></div>
-		</div>
-	</div>
-	<div class="spoke"></div>
-</div>
-</div>
-
-<!-- Your main content wrapper -->
-<div id="main-body" style="display: none;">
-  <!-- All your website content goes here -->
-
-
-
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#home"><span style="color: #00c6ff";>echo</span> dot </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#models-diff">Models</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#review">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="profile">
-          <i class="bi bi-person-circle" style="padding-left: 15px;"></i>
-          <div class="dropdown-content text-center">
-            <ul>
-              <li><a href="#0">Sign In</a></li>
-              <li><a href="#0">Login</a></li>
-            </ul>
+    <!-- Loading animation -->
+    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+      <div class="wheel"></div>
+      <div class="hamster">
+        <div class="hamster__body">
+          <div class="hamster__head">
+            <div class="hamster__ear"></div>
+            <div class="hamster__eye"></div>
+            <div class="hamster__nose"></div>
           </div>
-        </li>
+          <div class="hamster__limb hamster__limb--fr"></div>
+          <div class="hamster__limb hamster__limb--fl"></div>
+          <div class="hamster__limb hamster__limb--br"></div>
+          <div class="hamster__limb hamster__limb--bl"></div>
+          <div class="hamster__tail"></div>
+        </div>
+      </div>
+      <div class="spoke"></div>
     </div>
   </div>
-</nav>
 
-<!--scroll to top-->
-<button class="scr-btn" id="scr-btn" onclick="topFunction()">
-  <svg viewBox="0 0 384 512" class="svgIcon">
-    <path
-      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-    ></path>
-  </svg>
-</button>
+  <!-- Your main content wrapper -->
+  <div id="main-body" style="display: none;">
 
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"><span style="color: #00c6ff" ;>echo</span> dot </a>
 
-<div class="column-css">
-  
-  <section id="hero-css" style="padding-top:10px ;"></section>
-  <section id="feature1-css"></section>
-  <div class="details-card bg-light"><section id="color-css"></section></div>
-  <div class="import bg-light"><section id="models-css"></section></div>
-  <section id="scroll-css"></section>
-  <section id="feature2-css"></section>
-  <div class="import bg-light"><section id="data-css"></section></div>
-  <section id="review-css"></section>
-  <section id="contact-css"></section>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#models-diff">Models</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="profile">
+              <i class="bi bi-person-circle" style="padding-left: 15px;"></i>
+              <div class="dropdown-content text-center">
+                <ul>
+                  <li><a href="#0">Sign In</a></li>
+                  <li><a href="#0">Login</a></li>
+                </ul>
+              </div>
+            </li>
+        </div>
+      </div>
+    </nav>
 
-</div>
+    <!--scroll to top-->
+    <button class="scr-btn" id="scr-btn" onclick="topFunction()">
+      <svg viewBox="0 0 384 512" class="svgIcon">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+        </path>
+      </svg>
+    </button>
 
 
-<!--Footer-->
-<footer>
-    <div class="footer-content">
-      <h5>About Amazon Echo</h5>
-      <p>Amazon Echo is a cloud-based voice service that makes everyday life easier, more productive, and more fun. From playing music and controlling smart home devices to answering questions and setting reminders, Alexa helps you stay connected and in control all with just your voice.</p>
 
-      <ul class="socials">
-        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-        <li><a href="#"><i class="bi bi-google"></i></a></li>
-        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-      </ul>
+    <div class="column-css">
+
+      <!-- Hero -->
+      <section id="hero-css" style="padding-top:10px ;">
+        <div class="hero" id="home">
+          <div class="container-fluid p-0 d-flex flex-wrap">
+            <div class="hero-image">
+              <img src="images/hero1.png" alt="Alexa Sphere Device" class="image-fade">
+              <div class="container">
+                <div class="hero-content1">
+                  <h1>Meet Alexa.<br>Smart Living <br>Starts Here.</h1>
+                  <p>Control your home, music, and more with just your voice.</p>
+                  <button class="buy-now-btn"
+                    onclick="window.location.href='https://www.amazon.in/All-New-release-smart-speaker-Black/dp/B09B8M1M51?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&th=1';">Buy
+                    Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key features -->
+      <section id="feature1-css">
+        <div id="features" class="details-card py-5 bg-light">
+          <div class="container d-flex flex-column">
+            <h2 class="text-center mb-5 display-5 fw-bold sub_head">Key Features</h2>
+            <div class="row text-center">
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+                    <i class="bi bi-mic icon"></i>
+                    <h3 class="card-title mb-3">Smart Voice Control</h3>
+                    <p class="card-text">Alexa always ready to help.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+                    <i class="bi bi-house-door icon"></i>
+                    <h3 class="card-title mb-3">Smart Home Integration</h3>
+                    <p class="card-text">Works with compatible devices.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+
+                    <i class="bi bi-music-note-beamed icon"></i>
+                    <h3 class="card-title mb-3">Music Streaming</h3>
+                    <p class="card-text">Play songs from popular services.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+
+                    <i class="bi bi-shield-shaded icon"></i>
+                    <h3 class="card-title mb-3">Privacy Controls</h3>
+                    <p class="card-text">Multiple layers of privacy protection.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-body">
+
+                    <i class="bi bi-cpu icon"></i>
+                    <h3 class="card-title mb-3">Advanced Sensors</h3>
+                    <p class="card-text">Smart sensors for seamless comfort.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 d-flex justify-content-center">
+                  <a href="#more-detialed" class=" viewmore">
+                    <h3>View More...</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </section>
+
+
+      <!--Color Selection-->
+      <div class="details-card bg-light">
+        <section id="color-css">
+          <div class="color d-flex align-items-center justify-content-center rounded-3" id="color">
+
+            <div class="col-6 description d-flex justify-content-center">
+              <img src="images/text.png" alt="description" height="300px">
+            </div>
+
+            <div class="col-6 product d-flex align-items-center flex-column">
+              <h1 class="display-6 fw-bold text-center fs-2">Colors</h1>
+              <img id="product-image" src="images/colors/black.png" alt="Smartwatch" />
+
+              <div class="color-selection">
+                <span>Select Color:</span>
+                <div class="color-swatch" data-color="black" style="background-color: black;" aria-label="Black"
+                  tabindex="0"></div>
+                <div class="color-swatch" data-color="blue" style="background-color: rgb(0, 123, 255);"
+                  aria-label="Blue" tabindex="0"></div>
+                <div class="color-swatch" data-color="white" style="background-color: white; border: 1px solid #ccc;"
+                  aria-label="White" tabindex="0"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--Models-->
+      <div class="import bg-light">
+        <section id="models-css">
+
+          <div id="models-diff">
+            <section class="models">
+
+              <h2 class="sub_head mb-4">Models</h2>
+              <div class="wrapper">
+                <div class="card-1">
+                  <div class="poster"><img src="images/Echo Studio.webp" alt="Echo Studio"></div>
+                  <div class="details">
+                    <h1>Echo Studio</h1>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <span>4.2/5</span>
+                    </div>
+                    <div class="tags">
+                      <span class="tag">Premium Audio</span>
+                      <span class="tag">Smart Home Hub</span>
+                      <span class="tag">Dolby Atmos</span>
+                    </div>
+                    <p class="desc">
+                      Experience immersive sound with 3D audio, built-in smart home hub, and voice control with Alexa.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-1">
+                  <div class="poster"><img src="images/Echo Show.jpg" alt="Echo Show"></div>
+                  <div class="details">
+                    <h1>Echo Show</h1>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <span>4/5</span>
+                    </div>
+                    <div class="tags">
+                      <span class="tag">Smart Display</span>
+                      <span class="tag">Video Calls</span>
+                      <span class="tag">Recipes</span>
+                    </div>
+                    <p class="desc">
+                      Stay connected with video calls, manage your day with visual recipes, and enjoy entertainment on
+                      the vibrant display.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-1">
+                  <div class="poster"><img src="images/Echo Spot.jpeg" alt="echo spot"></div>
+                  <div class="details">
+                    <h1>Echo Spot</h1>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <span>4.7/5</span>
+                    </div>
+                    <div class="tags">
+                      <span class="tag">Compact Design</span>
+                      <span class="tag">Alarm Clock</span>
+                      <span class="tag">Video Briefings</span>
+                    </div>
+                    <p class="desc">
+                      A compact smart clock with a screen for quick glances at news, weather, and video flash briefings.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-1">
+                  <div class="poster"><img src="images/Echo Pop.jpg" alt="Echo Pop"></div>
+                  <div class="details">
+                    <h1>Echo Pop</h1>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <span>4.5/5</span>
+                    </div>
+                    <div class="tags">
+                      <span class="tag">Compact Smart Speaker</span>
+                      <span class="tag">Rich Sound</span>
+                      <span class="tag">Voice Control</span>
+                    </div>
+                    <p class="desc">
+                      A small and stylish smart speaker that delivers rich sound, perfect for bedrooms and small spaces.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+        </section>
+      </div>
+
+      <!--image scroll-->
+      <section id="scroll-css">
+        <div id="scroll">
+          <div class="animation-container">
+            <canvas id="frameCanvas"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!--Feature2-->
+      <section id="feature2-css">
+
+        <div class="container-fluid d-flex flex-column p-0" class="feature2" id="more-detialed">
+
+          <!--Intro-->
+          <div class="container-fluid py-5 text-center bg-light-gray section-spacing">
+            <div class="container">
+              <h2 class="display-5 fw-bold mb-3">Meet Amazon Echo Dot 5th Gen with Motion Detection and Temperature
+                Sensor</h2>
+              <p class="lead mb-4">The best sounding Echo Dot yet with Amazon Alexa. Ask Alexa to voice control music
+                and smart home devices, set alarms, play nursery rhymes, pay bills, and much more. Use in-built motion
+                and temperature sensors to control smart lights and appliances.</p>
+
+              <div class="image-container shadow-lg rounded-4 overflow-hidden">
+                <img src="images/poster1.jpg" alt="Amazon Echo Dot 5th Gen">
+              </div>
+            </div>
+          </div>
+
+          <!--Hero-->
+          <div class="container-fluid py-5 section-spacing" id="hero">
+            <div class="row justify-content-center">
+              <div class="col-12 p-0">
+                <div class="hero-section position-relative">
+                  <img src="images/poster2.jpg" alt="Echo Dot Modern Design" class="img-fluid">
+                  <div class="text-overlay text-white">
+                    <h1 class="display-3 fw-bold">Modern Design for Any Room</h1>
+                    <p class="lead">Its compact spherical form blends into any space bedroom, kitchen, or office without
+                      standing out.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Sound-->
+          <div class="container-fluid py-5 bg-light-gray section-spacing">
+            <div class="container">
+              <div class="row align-items-center text-center flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                  <div class="video-container shadow-lg rounded-4 overflow-hidden">
+                    <video src="images/speaker.mp4" muted loop autoplay class="img-fluid"></video>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h1 class="display-5 fw-bold mb-3">Our Best-Sounding Echo Dot Yet</h1>
+                  <p class="lead mb-4">Echo Dot features improved speaker quality, delivering clearer vocals and deeper
+                    bass for rich, vibrant sound. Just ask Alexa to play music, podcasts, and audiobooks and enjoy a
+                    dynamic audio experience anywhere in your home. Learn more about Alexa Entertainment.</p>
+                  <h3 class="text-primary fs-4">“Alexa, play today's hits.”</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Intro-->
+          <div class="container-fluid py-5 section-spacing">
+            <div class="container">
+              <div class="row align-items-center flex-column flex-md-row">
+                <div class="col-12 col-md-5 text-center text-md-start mb-4 mb-md-0">
+                  <h1 class="display-5 fw-bold mb-3">Smart Home Control Hub</h1>
+                  <p class="lead mb-4">Echo Dot features improved speaker quality, delivering clearer vocals and deeper
+                    bass for rich, vibrant sound. Just ask Alexa to play music, podcasts, and audiobooks and enjoy a
+                    dynamic audio experience anywhere in your home. Learn more about Alexa Entertainment.</p>
+                  <h3 class="text-primary fs-4">“Alexa, turn off the living room lights.”</h3>
+                </div>
+                <div class="col-12 col-md-7">
+                  <div class="video-container shadow-lg rounded-4 overflow-hidden">
+                    <video
+                      src="https://m.media-amazon.com/images/G/40/kindle/journeys/ki8c6GLBfYOl2B29Bdo3haAt3TtO8BiplYVUaBHNR2BRc3D/NWYyZWQ3NTkt"
+                      muted loop autoplay class="img-fluid" onloadstart="this.playbackRate = 4;"></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Tap&Play-->
+          <div class="container-fluid py-5 bg-light-gray section-spacing">
+            <div class="container">
+              <div class="row align-items-center flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-7 mb-4 mb-md-0">
+                  <div class="image-container shadow-lg rounded-4 overflow-hidden">
+                    <img
+                      src="https://m.media-amazon.com/images/G/40/kindle/journeys/ki8c6GLBfYOl2B29Bdo3haAt3TtO8BiplYVUaBHNR2BRc3D/ZGE1MDIwYTAt._CB606341513_.jpg"
+                      alt="Tap to Play or Pause">
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 text-center text-md-start">
+                  <h1 class="display-5 fw-bold mb-3">Tap to Play or Pause</h1>
+                  <p class="lead">No words? No problem. Tap the top of your Echo Dot to play/pause music, snooze alarms,
+                    or end timers with a gentle touch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Privacy-->
+          <div class="container-fluid py-5 section-spacing">
+            <div class="container">
+              <div class="row align-items-center d-flex flex-column">
+                <div class="col-12 mb-4">
+                  <div class="video-container shadow-lg rounded-4 overflow-hidden">
+                    <video
+                      src="https://m.media-amazon.com/images/G/40/kindle/journeys/ki8c6GLBfYOl2B29Bdo3haAt3TtO8BiplYVUaBHNR2BRc3D/YWZjODhkMjIt"
+                      autoplay muted loop class="img-fluid"></video>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <p class="lead">Alexa-enabled Echo devices are built with multiple layers of <a href="#"
+                      class="text-primary fw-bold text-decoration-none">privacy protection.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--2 Echo Pairing-->
+          <div class="container-fluid py-5 bg-light-gray section-spacing">
+            <div class="container text-center">
+              <h2 class="display-5 fw-bold mb-4">Do More with Device Pairing</h2>
+              <div class="d-flex justify-content-center mb-4">
+                <div class="image-container image-container-small shadow-lg rounded-4 overflow-hidden">
+                  <img src="images/2echo.png" alt="Two Echo Dots Paired" class="img-fluid">
+                </div>
+              </div>
+              <h4 class="fs-3 mb-2">Echo Dot + another Echo</h4>
+              <p class="lead">Fill your home with music using compatible Echo devices in different rooms.</p>
+            </div>
+          </div>
+
+          <!--Control-->
+          <div class="container-fluid py-5 section-spacing">
+            <div class="container">
+              <h3 class="display-5 fw-bold text-center mb-5">Smart Home with Echo Dot</h3>
+              <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="echo-card card shadow-sm h-100 rounded-4 overflow-hidden">
+                    <div class="card2-body d-flex flex-column align-items-center text-center p-4">
+                      <div class="icon-container mb-3">
+                        <img src="images/voice1.gif" alt="Voice Commands Icon" class="img-fluid">
+                      </div>
+                      <h1 class="fs-4 fw-bold mb-2">Voice Commands</h1>
+                      <p class="card-text">Hands full? No problem. Whether you're cooking, relaxing, or heading to bed,
+                        Alexa is ready to respond, anytime.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="echo-card card shadow-sm h-100 rounded-4 overflow-hidden">
+                    <div class="card2-body d-flex flex-column align-items-center text-center p-4">
+                      <div class="icon-container mb-3">
+                        <img src="images/temp.png" alt="Temperature Sensor Icon" class="img-fluid">
+                      </div>
+                      <h1 class="fs-4 fw-bold mb-2">Temperature Sensor</h1>
+                      <p class="card-text">Sleep comfortably without the room getting too cold or walk-in to a cooled
+                        room on a hot day. Senses the room temperature and turns on or turns off the AC.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="echo-card card shadow-sm h-100 rounded-4 overflow-hidden">
+                    <div class="card2-body d-flex flex-column align-items-center text-center p-4">
+                      <div class="icon-container mb-3">
+                        <img src="images/motion.gif" alt="Motion Detection Icon" class="img-fluid">
+                      </div>
+                      <h1 class="fs-4 fw-bold mb-2">Motion Detection</h1>
+                      <p class="card-text">Use motion detection feature to automatically turn on smart lights when you
+                        enter a room or turn them off when the room is vacant.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Setup-->
+          <div class="container-fluid py-5 bg-light-gray section-spacing">
+            <div class="container">
+              <div class="row align-items-start text-center">
+                <div class="col-12 mb-4">
+                  <h2 class="display-5 fw-bold">Simple to Set Up and Use</h2>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="setup-step p-3">
+                    <div class="mb-3">
+                      <img src="images/step1.jpg" alt="Plug in Echo Dot">
+                    </div>
+                    <h4 class="fs-4 fw-bold">Step 1</h4>
+                    <p class="lead">Plug in Echo Dot.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="setup-step p-3">
+                    <div class=" mb-3">
+                      <img src="images/step2.jpg" alt="Connect to internet">
+                    </div>
+                    <h4 class="fs-4 fw-bold">Step 2</h4>
+                    <p class="lead">Connect to the internet using the Alexa app.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="setup-step p-3">
+                    <div class="mb-3">
+                      <img src="images/step3.jpg">
+                    </div>
+                    <h4 class="fs-4 fw-bold">Step 3</h4>
+                    <p class="lead">Ask Alexa for music, weather, news, and more.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Box Content-->
+          <div class="container-fluid py-5 section-spacing">
+            <div class="container">
+              <div class="row align-items-center text-center flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                  <div class="image-container shadow-lg rounded-4 overflow-hidden">
+                    <img src="images/boxcontent.jpg" alt="What's in the Box">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start">
+                  <h1 class="display-5 fw-bold mb-4">What's in the Box</h1>
+                  <ul class="list-unstyled text-start fs-5">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Echo Dot (5th Gen)</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Power Adapter (15W)</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Quick Start Guide</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Technical Details-->
+          <div class="container-fluid py-5 bg-light-gray section-spacing">
+            <div class="container">
+              <h1 class="display-5 fw-bold text-center mb-5">Technical Details</h1>
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                  <div class=" image-container shadow-lg rounded-4 overflow-hidden">
+                    <img src="images/spec.jpg" alt="Technical Details">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Expert review-->
+          <div class="container-fluid py-5 section-spacing">
+            <div class="container">
+              <div class="row align-items-center d-flex flex-column">
+                <h1 class="display-5 fw-bold text-center mb-5">Expert Reviews</h1>
+                <div class="col-12 mb-4">
+                  <div class="video-container shadow-lg rounded-4 overflow-hidden">
+                    <video
+                      src="https://m.media-amazon.com/images/G/31/kindle/journeys/k8d24om2UAWmhuan2BfdOqBAPyrpejJdMwS8GVX2qKUs3D/OGMxM2QzMzQt._CB577616026_.mp4"
+                      poster="images/vid_poster.png" class="img-fluid" controls></video>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+      </section>
+
+      <!--feature discription-->
+      <div class="import bg-light">
+        <section id="data-css">
+
+
+          <div class="" id="data">
+            <h6 class="display-5 fw-bold text-center fs-2 mb-4">Echo Dot (5th Gen) Specifications</h6>
+
+            <div class="row d-flex align-items-stretch">
+              <!-- First Column -->
+              <div class="col-md-6 d-flex">
+                <div class="spec-card w-100">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th>Size</th>
+                        <td>3.9” x 3.9” x 3.5” (100mm x 100mm x 89 mm)</td>
+                      </tr>
+                      <tr>
+                        <th>Weight</th>
+                        <td>10.7 oz (304g) - May vary by manufacturing process</td>
+                      </tr>
+                      <tr>
+                        <th>Audio</th>
+                        <td>1.73” (44 mm) front-firing speaker, Lossless HD</td>
+                      </tr>
+                      <tr>
+                        <th>Wi-Fi Connectivity</th>
+                        <td>Dual-band Wi-Fi (802.11a/b/g/n/ac); No ad-hoc support</td>
+                      </tr>
+                      <tr>
+                        <th>Smart Home Protocols</th>
+                        <td>Wi-Fi, BLE Mesh, Matter (Alexa Android only for now)</td>
+                      </tr>
+                      <tr>
+                        <th>Bluetooth</th>
+                        <td>Supports A2DP, AVRCP (no Mac OS X hands-free, no PIN speakers)</td>
+                      </tr>
+                      <tr>
+                        <th>System Requirements</th>
+                        <td>Compatible with Fire OS, Android, iOS, Web. <a
+                            href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201602060">View supported
+                            OS</a></td>
+                      </tr>
+                      <tr>
+                        <th>Setup Technology</th>
+                        <td>Amazon Wi-Fi Simple Setup. <a
+                            href="https://www.amazon.in/gp/help/customer/display.html/?nodeId=GMPKVYDBR223TRPY">Learn
+                            more</a></td>
+                      </tr>
+                      <tr>
+                        <th>Warranty</th>
+                        <td>1 year limited warranty. <a
+                            href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201014520">Warranty
+                            Info</a></td>
+                      </tr>
+                      <tr>
+                        <th>Processor</th>
+                        <td>AZ2 Neural Edge Processor (for faster responses and local voice processing)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Second Column -->
+              <div class="col-md-6 d-flex">
+                <div class="spec-card w-100">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th>Accessibility</th>
+                        <td>Includes features for vision, hearing, mobility, and speech. <a
+                            href="https://www.amazon.in/gp/help/customer/display.html?nodeId=202158280">More info</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Box Contents</th>
+                        <td>Echo Dot, 15W Adapter, <a
+                            href="https://d1ergij2b6wmg5.cloudfront.net/Alexa+Devices/Echo_Dot_5th_Gen/22-004127-01_EchoDot_Gen5_Online_QSG_IN.pdf">Quick
+                            Start Guide</a></td>
+                      </tr>
+                      <tr>
+                        <th>Generation</th>
+                        <td>5th Gen (2022 release)</td>
+                      </tr>
+                      <tr>
+                        <th>Privacy</th>
+                        <td>Wake word tech, mic off, delete recordings, etc. <a
+                            href="https://www.amazon.in/b/?node=17138424031">Privacy Hub</a></td>
+                      </tr>
+                      <tr>
+                        <th>Languages</th>
+                        <td>English and Hindi</td>
+                      </tr>
+                      <tr>
+                        <th>Generic Name</th>
+                        <td>Smart Speakers</td>
+                      </tr>
+                      <tr>
+                        <th>Made in</th>
+                        <td>China/Vietnam</td>
+                      </tr>
+                      <tr>
+                        <th>Importer</th>
+                        <td>Amazon Wholesale India, Nehru Place, New Delhi</td>
+                      </tr>
+                      <tr>
+                        <th>Manufacturer</th>
+                        <td>HENGYANG FUTAIHONG (China), Fushan Tech (Vietnam)</td>
+                      </tr>
+                      <tr>
+                        <th>MRP</th>
+                        <td>₹5,499</td>
+                      </tr>
+                      <tr>
+                        <th>Quantity</th>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+      </div>
+
+
+      <!--User Review-->
+      <section id="review-css">
+        <div class="details-card mb-4" id="review">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="card-title mb-0">User Reviews</h3>
+            <button class="write-review-btn d-flex justify-content-center">
+              <span>
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+                </svg>
+                Write a Review
+              </span>
+            </button>
+          </div>
+
+          <div class="reviews-container">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-info">
+                  <div class="reviewer-avatar">JD</div>
+                  <div>
+                    <div class="reviewer-name">JohnDoe42</div>
+                    <div class="review-date">December 15, 2023</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  <span class="rating-value">10</span>
+                  <span class="max-rating">/10</span>
+                </div>
+              </div>
+              <h4 class="review-title">A smart companion that blends into your life seamlessly</h4>
+              <p class="review-text">The Amazon Echo Dot isn’t just a gadget—it’s like a helpful roommate who never
+                forgets anything and always listens (literally). From setting alarms with a whisper to playing my
+                favorite playlists while I cook, it’s become a constant in my daily routine. The sound quality is
+                surprisingly rich for such a compact device, and the voice recognition is nearly flawless, even with
+                background noise. It’s hard to remember what life was like before Alexa became part of it.</p>
+              <div class="review-footer">
+                <div class="review-helpful">
+                  <span>Was this review helpful?</span>
+                  <button class="btn btn-sm btn-outline-secondary ms-2"><i class="bi bi-hand-thumbs-up"></i>
+                    Yes</button>
+                  <button class="btn btn-sm btn-outline-secondary ms-2"><i class="bi bi-hand-thumbs-down"></i>
+                    No</button>
+                </div>
+                <div class="review-helpfulness">
+                  <span>738 out of 764 found this helpful</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-info">
+                  <div class="reviewer-avatar">MC</div>
+                  <div>
+                    <div class="reviewer-name">Userunknown99</div>
+                    <div class="review-date">February 27, 2024</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  <span class="rating-value">9</span>
+                  <span class="max-rating">/10</span>
+                </div>
+              </div>
+              <h4 class="review-title">Small in size, massive in convenience</h4>
+              <p class="review-text">Don’t let its size fool you—the Echo Dot packs a punch in both sound and smarts. I
+                originally bought it to control my smart lights, but now I use it for everything from checking the
+                weather before a run to converting measurements while baking. The sleek design fits in anywhere, and it
+                responds quickly, even across the room. It's like having a personal assistant who never complains and is
+                always available.</p>
+
+              <div class="review-footer">
+                <div class="review-helpful">
+                  <span>Was this review helpful?</span>
+                  <button class="btn btn-sm btn-outline-secondary ms-2"><i class="bi bi-hand-thumbs-up"></i>
+                    Yes</button>
+                  <button class="btn btn-sm btn-outline-secondary ms-2"><i class="bi bi-hand-thumbs-down"></i>
+                    No</button>
+                </div>
+                <div class="review-helpfulness">
+                  <span>427 out of 442 found this helpful</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn-load-more">Load More Reviews</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--Get In touch -->
+      <section id="contact-css">
+        <div id="contact" class="details-card py-5 bg-light">
+          <div class="container d-flex flex-column">
+            <h2 class="text-center mb-4 ">Get in Touch</h2>
+            <form class="w-75 mx-auto">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="2" placeholder="How can we help you?" required></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="msg-snd-btn">
+                  <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>Send Message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </div>
-    <div class="footer-bottom">
-      <p>Copyright &copy 2025 </p>
-      <div class="footer-menu">
-        <ul class="f-menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-content">
+        <h5>About Amazon Echo</h5>
+        <p>Amazon Echo is a cloud-based voice service that makes everyday life easier, more productive, and more fun.
+          From playing music and controlling smart home devices to answering questions and setting reminders, Alexa
+          helps you stay connected and in control all with just your voice.</p>
+
+        <ul class="socials">
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-google"></i></a></li>
+          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
         </ul>
       </div>
-    </div>
-</footer>
+      <div class="footer-bottom">
+        <p>Copyright &copy 2025 </p>
+        <div class="footer-menu">
+          <ul class="f-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
 
-</div>
+  </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <script src="script.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
