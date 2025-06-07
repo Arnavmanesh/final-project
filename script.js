@@ -20,7 +20,7 @@ function allLoaded() {
 
 checkAllLoaded();
 
-// Modify initScrollCanvas to integrate with preloading
+//  Image-scroll
 function initScrollCanvas() {
   const frameCount = 887; //
   const canvas = document.getElementById("frameCanvas"); //
@@ -120,7 +120,7 @@ function initScrollCanvas() {
 
 ;
 
-// Color swatches (remains the same)
+// Change Color 
 function initColorSwatches() { //
   const swatches = document.querySelectorAll('.color-swatch'); //
   const productImage = document.getElementById('product-image'); //
@@ -142,7 +142,7 @@ function initColorSwatches() { //
   });
 }
 
-/// Get the button:
+/// Get to top button:
 const mybutton = document.getElementById("scr-btn");
 
 // When the user scrolls down 200px from the top of the document, show the button
